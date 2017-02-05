@@ -1,0 +1,75 @@
+<html>
+<title>Data Incubator Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/bootstrap.min.css" rel="stylesheet", media="screen">
+    <div class="container">
+
+    <h1>Data Incubator Chanllenge by Soyoung Kim</h1>
+    <div class="container">
+
+    <h3> - Category Selection Generator using Stack Overflow Data with Clustering in Python</h3>
+
+  <div class="container">
+  <div class="container">
+
+  <h3>
+  Plots for my project
+  </h3>
+
+  <form id='index' method='post' action='plot1' > 
+  <input type='submit' value='Plot1: Category Selection Generator Process ' /> 
+
+  <form id='index' method='post' action='plot2' > 
+  <input type='submit' value='Plot1: Ideal Clustering Output with Matplotlib' /> 
+  </form>
+  </p>
+  <br>
+
+  <h4><p>
+  I am to make an app that generates a category selection of terms related to Python using Web Data using Machine Learning. </p>
+  
+  <b>
+  <br>
+
+  <p>How? and what is that?</b>
+  </h4>
+
+
+  <p>
+  When I was at grad school, every time I used search engines for programming queries such as Google, I wish there were some indexes with core description to help me figure out how to find the desired results efficiently. For example, when I was a beginner in Python, I wanted to search how to slice elements in the array of data structure. The fact that I actually didn’t know specific terminology ‘slice’ and ‘element’, I spent quite a time on finding it than it was supposed to be. Of course, most of programmers know those terms already but what if people who are not originally from computer science filed want to get some help with coding but don’t exactly know what to search for. It would be useful if we had an access to a service having a multiple category selection with details, that based on answers and questions by users clustered and classified with categories along with some explanation. Such a service could potentially be useful by cutting searching time short and being focused on the major task.
+  </p>
+  <p>
+  In order to generate such service, full text of questions and answers from Stack Overflow that are tagged with the python tag will be used with natural language processing and community analysis by clustering a set of answers to questions and generating a list of indexes. </p>
+  
+   <h3>
+  Data
+  </h3>
+  <p>
+  For my proposal, I use the Stack Overflow data from Kaggle datasets. The dataset contains questions, answers, and tags up to 19 October 2016, where the data size is 700MB in total. In addition to helping its users enhance their work performance, this app may help Stack Overflow maintain the storage of web feed more efficiently by not generating redundant questions. </p> Full text of questions and answers from Stack Overflow that are tagged with the python tag, useful for natural language processing and community analysis, provided by Stack Overflow on <a href='https://www.kaggle.com/stackoverflow/pythonquestions'>Kaggle Datasets</a>.
+  </p>
+  </br>
+
+  <h3>
+  Steps to follow:
+  </h3>
+
+  <p>
+  <li>Tokenzation and stemmization each user's answer
+  <li>Transforming the corpus into vector space using <a href="http://en.wikipedia.org/wiki/Tf%E2%80%93idf">tf-idf</a>
+  <li>Calculating cosine distance between each document as a measure of similarity
+  <li>Clustering the documents using the <a href="http://en.wikipedia.org/wiki/K-means_clustering">k-means algorithm</a>
+  <li>Using <a href="http://en.wikipedia.org/wiki/Multidimensional_scaling">multidimensional scaling</a> to reduce dimensionality within the corpus
+  <li>Plotting the clustering output using <a href="http://matplotlib.org/">matplotlib</a> and <a href="http://mpld3.github.io/">mpld3</a>
+  <li>Conducting a hierarchical clustering on the corpus using <a href="http://en.wikipedia.org/wiki/Ward%27s_method">Ward clustering</a>
+  <li>Collecting questions where each cluster's user ID matches on such questions 
+  <li>Plotting a Ward dendrogram
+  <li>Topic modeling using <a href="http://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a>
+  <li>Generating a nested category selection
+  <li>Wrapping up everything and producing a module (app)
+  </ul>
+  </p>
+
+  </br>
+
+  
+
