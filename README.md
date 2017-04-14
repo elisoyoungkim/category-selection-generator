@@ -8,6 +8,9 @@ When I was at grad school, every time I used search engines for programming quer
 
 In order to generate such service, full text of questions and answers from Stack Overflow that are tagged with the python tag will be used with natural language processing and community analysis by clustering a set of answers to questions and generating a list of indexes.
 
+    Category Selection Generator Process
+![alt tag](https://cloud.githubusercontent.com/assets/22326212/25047493/032e6d02-2105-11e7-8c29-3b7e44de3c9b.png)
+
 ## Data
 For my proposal, I use the Stack Overflow data from Kaggle datasets. The dataset contains questions, answers, and tags up to 19 October 2016, where the data size is 700MB in total. In addition to helping its users enhance their work performance, this app may help Stack Overflow maintain the storage of web feed more efficiently by not generating redundant questions.
 
