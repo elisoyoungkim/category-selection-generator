@@ -8,26 +8,27 @@ When I was at grad school, every time I used search engines for programming quer
 
 In order to generate such service, full text of questions and answers from Stack Overflow that are tagged with the python tag will be used with natural language processing and community analysis by clustering a set of answers to questions and generating a list of indexes.
 
-    Category Selection Generator Process
-![alt tag](https://cloud.githubusercontent.com/assets/22326212/25047493/032e6d02-2105-11e7-8c29-3b7e44de3c9b.png)
-
 ## Data
 For my proposal, I use the Stack Overflow data from Kaggle datasets. The dataset contains questions, answers, and tags up to 19 October 2016, where the data size is 700MB in total. In addition to helping its users enhance their work performance, this app may help Stack Overflow maintain the storage of web feed more efficiently by not generating redundant questions.
 
 Full text of questions and answers from Stack Overflow that are tagged with the python tag, useful for natural language processing and community analysis, provided by Stack Overflow on Kaggle Datasets.
 
+
+## Category Selection Generator Process
+![alt tag](https://cloud.githubusercontent.com/assets/22326212/25047573/95e7eb8c-2105-11e7-8dbc-966d744184ed.png)
+
 ## Steps to follow:
-Tokenzation and stemmization each user's answer
-Transforming the corpus into vector space using tf-idf
-Calculating cosine distance between each document as a measure of similarity
-Clustering the documents using the k-means algorithm
-Using multidimensional scaling to reduce dimensionality within the corpus
-Plotting the clustering output using matplotlib and mpld3
-Conducting a hierarchical clustering on the corpus using Ward clustering
-Collecting questions where each cluster's user ID matches on such questions
-Plotting a Ward dendrogram
-Topic modeling using Latent Dirichlet Allocation (LDA)
-Generating a nested category selection
-Wrapping up everything and producing a module (app)
+* Tokenzation and stemmization each user's answer
+* Transforming the corpus into vector space using tf-idf
+* Calculating cosine distance between each document as a measure of similarity
+* Clustering the documents using the k-means algorithm
+* Using multidimensional scaling to reduce dimensionality within the corpus
+* Plotting the clustering output using matplotlib and mpld3
+* Conducting a hierarchical clustering on the corpus using Ward clustering
+* Collecting questions where each cluster's user ID matches on such questions
+* Plotting a Ward dendrogram
+* Topic modeling using Latent Dirichlet Allocation (LDA)
+* Generating a nested category selection
+* Wrapping up everything and producing a module (app)
 
 https://category-selection-generator.herokuapp.com/
