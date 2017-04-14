@@ -13,7 +13,6 @@ For my proposal, I use the Stack Overflow data from Kaggle datasets. The dataset
 
 Full text of questions and answers from Stack Overflow that are tagged with the python tag, useful for natural language processing and community analysis, provided by Stack Overflow on Kaggle Datasets.
 
-
 ## Category Selection Generator Process
 ![alt tag](https://cloud.githubusercontent.com/assets/22326212/25047573/95e7eb8c-2105-11e7-8dbc-966d744184ed.png)
 
